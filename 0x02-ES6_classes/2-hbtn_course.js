@@ -1,3 +1,5 @@
+/* AUthor: mikiasHailu */
+
 export default class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
@@ -8,13 +10,9 @@ export default class HolbertonCourse {
       throw new TypeError('Students must be an array of strings');
     }
 
-    this._students = students;
     this._name = name;
     this._length = length;
-  }
-
-  get students() {
-    return this._students;
+    this._students = students;
   }
 
   get name() {
@@ -25,13 +23,10 @@ export default class HolbertonCourse {
     return this._length;
   }
 
-  set students(students) {
-    if (!Array.isArray(students)) {
-      throw new TypeError('Students must be an array of strings');
-    }
-    this._students = students;
+  get students() {
+    return this._students;
   }
-  }
+
   set name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
@@ -46,3 +41,10 @@ export default class HolbertonCourse {
     this._length = length;
   }
 
+  set students(students) {
+    if (!Array.isArray(students)) {
+      throw new TypeError('Students must be an array of strings');
+    }
+    this._students = students;
+  }
+}
