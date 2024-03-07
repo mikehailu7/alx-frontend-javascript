@@ -1,5 +1,4 @@
 /* Author: MikiasHailu */
-/* Advanced task */ 
 
 import Car from './10-car';
 
