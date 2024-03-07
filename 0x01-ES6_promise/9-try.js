@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* Author-mikiashailu */
 export default function guardrail(mathFunction) {
   const queue = [];
 
